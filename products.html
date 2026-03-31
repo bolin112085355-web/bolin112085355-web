@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products - Generator Spare Parts Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav">
+          <a class="logo" href="index.html">Generator Spare Parts Solutions</a>
+          <div class="nav-links">
+            <a href="index.html" data-en="Home" data-zh="首页" data-ru="Главная" data-ar="الرئيسية">Home</a>
+<a class="active" href="products.html" data-en="Products" data-zh="产品" data-ru="Продукция" data-ar="المنتجات">Products</a>
+<a href="solutions.html" data-en="Solutions" data-zh="解决方案" data-ru="Решения" data-ar="الحلول">Solutions</a>
+<a href="about.html" data-en="About" data-zh="关于我们" data-ru="О нас" data-ar="من نحن">About</a>
+<a href="contact.html" data-en="Contact" data-zh="联系我们" data-ru="Контакты" data-ar="اتصل بنا">Contact</a>
+<a href="cart.html" data-en="Cart" data-zh="购物车" data-ru="Корзина" data-ar="السلة">Cart</a>
+            <select id="lang-select" class="lang-select" aria-label="Language selector">
+              <option value="en">English</option>
+              <option value="zh">中文</option>
+              <option value="ru">Русский</option>
+              <option value="ar">العربية</option>
+            </select>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="page-hero">
+      <div class="container">
+        <h1 data-en="Products" data-zh="产品" data-ru="Продукция" data-ar="المنتجات">Products</h1><p data-en="Four-language product showcase with images, pricing and cart buttons." data-zh="四语产品展示页，已包含图片、价格和购物车按钮。" data-ru="Четырёхъязычная витрина с изображениями, ценами и кнопками корзины." data-ar="صفحة عرض بأربع لغات تشمل الصور والأسعار وأزرار السلة.">Four-language product showcase with images, pricing and cart buttons.</p>
+      </div>
+    </section>
+  </div>
+  <main>
+    
+<section>
+  <div class="container">
+    <h2 class="section-title"
+        data-en="Main Products" data-zh="主营产品" data-ru="Основная продукция" data-ar="المنتجات الرئيسية">Main Products</h2>
+    <p class="section-subtitle"
+       data-en="You can replace the current sample products with your real company products later."
+       data-zh="后续你可以把当前示例产品替换为你们公司的真实产品。"
+       data-ru="Позже вы сможете заменить текущие примеры на реальные товары вашей компании."
+       data-ar="يمكنك لاحقاً استبدال المنتجات التجريبية الحالية بمنتجات شركتك الحقيقية.">
+      You can replace the current sample products with your real company products later.
+    </p>
+    <div class="grid-3">
+      <div class="product-card">
+        <img src="assets/product-injector.svg" alt="Fuel Injector">
+        <div class="content">
+          <div class="tag" data-en="Engine Part" data-zh="发动机配件" data-ru="Деталь двигателя" data-ar="قطعة محرك">Engine Part</div>
+          <h3 data-en="Fuel Injector" data-zh="燃油喷油器" data-ru="Топливная форсунка" data-ar="حاقن الوقود">Fuel Injector</h3>
+          <p data-en="Suitable for repair and replacement needs in generator maintenance."
+             data-zh="适用于发电机维修与更换需求。"
+             data-ru="Подходит для ремонта и замены при обслуживании генераторов."
+             data-ar="مناسب لاحتياجات الإصلاح والاستبدال في صيانة المولدات.">
+            Suitable for repair and replacement needs in generator maintenance.
+          </p>
+          <p class="price">$100</p>
+          <button class="btn btn-primary" onclick="addToCart('injector')" data-en="Add to Cart" data-zh="加入购物车" data-ru="В корзину" data-ar="أضف إلى السلة">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/product-filter.svg" alt="Filter Kit">
+        <div class="content">
+          <div class="tag" data-en="Maintenance Kit" data-zh="保养套件" data-ru="Комплект обслуживания" data-ar="طقم صيانة">Maintenance Kit</div>
+          <h3 data-en="Filter Kit" data-zh="滤芯套装" data-ru="Комплект фильтров" data-ar="طقم الفلاتر">Filter Kit</h3>
+          <p data-en="A good entry product for repeat purchases and regular servicing."
+             data-zh="适合作为复购型保养产品。"
+             data-ru="Хороший стартовый товар для повторных закупок и регулярного обслуживания."
+             data-ar="منتج مناسب للشراء المتكرر والصيانة الدورية.">
+            A good entry product for repeat purchases and regular servicing.
+          </p>
+          <p class="price">$20</p>
+          <button class="btn btn-primary" onclick="addToCart('filter')" data-en="Add to Cart" data-zh="加入购物车" data-ru="В корзину" data-ar="أضف إلى السلة">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/product-piston.svg" alt="Piston Set">
+        <div class="content">
+          <div class="tag" data-en="Core Profit" data-zh="核心利润产品" data-ru="Основной прибыльный товар" data-ar="منتج ربح أساسي">Core Profit</div>
+          <h3 data-en="Piston Set" data-zh="活塞组件" data-ru="Комплект поршней" data-ar="مجموعة المكابس">Piston Set</h3>
+          <p data-en="A stronger-margin product suitable for repair and overhaul scenarios."
+             data-zh="适用于维修和大修场景的高价值产品。"
+             data-ru="Товар с более высокой маржой, подходящий для ремонта и капитального обслуживания."
+             data-ar="منتج ذو هامش أعلى مناسب للإصلاحات والصيانة الكبيرة.">
+            A stronger-margin product suitable for repair and overhaul scenarios.
+          </p>
+          <p class="price">$80</p>
+          <button class="btn btn-primary" onclick="addToCart('piston')" data-en="Add to Cart" data-zh="加入购物车" data-ru="В корзину" data-ar="أضف إلى السلة">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/product-gasket.svg" alt="Gasket Kit">
+        <div class="content">
+          <div class="tag" data-en="Repair Kit" data-zh="维修包" data-ru="Ремкомплект" data-ar="طقم إصلاح">Repair Kit</div>
+          <h3 data-en="Gasket Kit" data-zh="垫片维修包" data-ru="Комплект прокладок" data-ar="طقم الحشيات">Gasket Kit</h3>
+          <p data-en="Useful for complete maintenance support and parts bundling."
+             data-zh="适合打包销售和完整维修支持。"
+             data-ru="Подходит для комплексного обслуживания и пакетных поставок деталей."
+             data-ar="مفيد للدعم الكامل في الصيانة وتجميع القطع في حزمة واحدة.">
+            Useful for complete maintenance support and parts bundling.
+          </p>
+          <p class="price">$35</p>
+          <button class="btn btn-primary" onclick="addToCart('gasket')" data-en="Add to Cart" data-zh="加入购物车" data-ru="В корзину" data-ar="أضف إلى السلة">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/product-bearing.svg" alt="Bearing Set">
+        <div class="content">
+          <div class="tag" data-en="Mechanical Part" data-zh="机械配件" data-ru="Механическая деталь" data-ar="قطعة ميكانيكية">Mechanical Part</div>
+          <h3 data-en="Bearing Set" data-zh="轴承组件" data-ru="Комплект подшипников" data-ar="مجموعة المحامل">Bearing Set</h3>
+          <p data-en="Suitable for repair support and equipment operation reliability."
+             data-zh="适用于维修支持和设备运行稳定性提升。"
+             data-ru="Подходит для ремонтной поддержки и повышения надёжности работы оборудования."
+             data-ar="مناسب لدعم الإصلاح وتحسين موثوقية تشغيل المعدات.">
+            Suitable for repair support and equipment operation reliability.
+          </p>
+          <p class="price">$45</p>
+          <button class="btn btn-primary" onclick="addToCart('bearing')" data-en="Add to Cart" data-zh="加入购物车" data-ru="В корзину" data-ar="أضف إلى السلة">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/product-generator.svg" alt="Generator Set">
+        <div class="content">
+          <div class="tag" data-en="Big Ticket" data-zh="高客单产品" data-ru="Крупный заказ" data-ar="منتج عالي القيمة">Big Ticket</div>
+          <h3 data-en="Diesel Generator Set" data-zh="柴油发电机组" data-ru="Дизель-генераторная установка" data-ar="مجموعة مولد ديزل">Diesel Generator Set</h3>
+          <p data-en="Project-based supply for clients who need full generator equipment."
+             data-zh="面向需要整机设备的项目型客户。"
+             data-ru="Поставка для проектных клиентов, которым нужно полное генераторное оборудование."
+             data-ar="توريد مخصص للعملاء الذين يحتاجون إلى معدات مولد كاملة.">
+            Project-based supply for clients who need full generator equipment.
+          </p>
+          <p class="price">$1200</p>
+          <button class="btn btn-primary" onclick="addToCart('generator')" data-en="Add to Cart" data-zh="加入购物车" data-ru="В корзину" data-ar="أضف إلى السلة">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="notice" id="cart-notice"></div>
+  </div>
+</section>
+
+  </main>
+  <footer>
+    <div class="container">
+      <span data-en="© 2026 Generator Spare Parts Solutions. All rights reserved."
+            data-zh="© 2026 发电机配件解决方案网站。保留所有权利。"
+            data-ru="© 2026 Сайт решений по запасным частям для генераторов. Все права защищены."
+            data-ar="© 2026 موقع حلول قطع غيار المولدات. جميع الحقوق محفوظة.">
+        © 2026 Generator Spare Parts Solutions. All rights reserved.
+      </span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

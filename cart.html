@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart - Generator Spare Parts Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav">
+          <a class="logo" href="index.html">Generator Spare Parts Solutions</a>
+          <div class="nav-links">
+            <a href="index.html" data-en="Home" data-zh="首页" data-ru="Главная" data-ar="الرئيسية">Home</a>
+<a href="products.html" data-en="Products" data-zh="产品" data-ru="Продукция" data-ar="المنتجات">Products</a>
+<a href="solutions.html" data-en="Solutions" data-zh="解决方案" data-ru="Решения" data-ar="الحلول">Solutions</a>
+<a href="about.html" data-en="About" data-zh="关于我们" data-ru="О нас" data-ar="من نحن">About</a>
+<a href="contact.html" data-en="Contact" data-zh="联系我们" data-ru="Контакты" data-ar="اتصل بنا">Contact</a>
+<a class="active" href="cart.html" data-en="Cart" data-zh="购物车" data-ru="Корзина" data-ar="السلة">Cart</a>
+            <select id="lang-select" class="lang-select" aria-label="Language selector">
+              <option value="en">English</option>
+              <option value="zh">中文</option>
+              <option value="ru">Русский</option>
+              <option value="ar">العربية</option>
+            </select>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="page-hero">
+      <div class="container">
+        <h1 data-en="Cart" data-zh="购物车" data-ru="Корзина" data-ar="السلة">Cart</h1><p data-en="Simple presentation cart for product display and inquiry flow." data-zh="用于产品展示和询盘流程的简易购物车页面。" data-ru="Простая демонстрационная корзина для показа продукции и процесса запроса." data-ar="سلة عرض بسيطة لعرض المنتجات ومسار الاستفسار.">Simple presentation cart for product display and inquiry flow.</p>
+      </div>
+    </section>
+  </div>
+  <main>
+    
+<section>
+  <div class="container">
+    <div class="grid-2">
+      <div>
+        <h2 class="section-title" data-en="Shopping Cart" data-zh="购物车" data-ru="Корзина" data-ar="سلة التسوق">Shopping Cart</h2>
+        <p class="section-subtitle"
+           data-en="This is a simple demo cart for presentation. In real B2B business, clients often still confirm by email and quotation."
+           data-zh="这是一个演示用购物车。真实 B2B 外贸业务里，客户通常仍然会通过邮件和报价单来最终确认。"
+           data-ru="Это демонстрационная корзина. В реальном B2B бизнесе клиенты обычно всё равно подтверждают заказ по email и коммерческому предложению."
+           data-ar="هذه سلة عرض تجريبية. في أعمال B2B الحقيقية، غالباً ما يؤكد العملاء الطلب عبر البريد الإلكتروني وعرض السعر.">
+          This is a simple demo cart for presentation. In real B2B business, clients often still confirm by email and quotation.
+        </p>
+        <div class="window-box">
+          <ul id="cart-items" class="cart-items"></ul>
+        </div>
+      </div>
+
+      <div>
+        <div class="cart-panel">
+          <h3 data-en="Cart Summary" data-zh="购物车汇总" data-ru="Сводка корзины" data-ar="ملخص السلة">Cart Summary</h3>
+          <p><span data-en="Items:" data-zh="商品数量：" data-ru="Товаров:" data-ar="عدد العناصر:">Items:</span> <span id="cart-count">0</span></p>
+          <p class="cart-summary"><span data-en="Estimated Total:" data-zh="预估总价：" data-ru="Ориентировочная сумма:" data-ar="الإجمالي التقديري:">Estimated Total:</span> <span id="cart-total">$0</span></p>
+          <div class="btn-row" style="margin-top:12px;">
+            <button class="btn btn-primary" onclick="window.location.href='contact.html'" data-en="Send Inquiry" data-zh="发送询盘" data-ru="Отправить запрос" data-ar="إرسال استفسار">Send Inquiry</button>
+            <button class="btn btn-dark" onclick="clearCart()" data-en="Clear Cart" data-zh="清空购物车" data-ru="Очистить корзину" data-ar="تفريغ السلة">Clear Cart</button>
+          </div>
+          <p class="small" style="margin-top:14px;"
+             data-en="This total is for display only. Real pricing can depend on model, quantity, delivery and technical requirements."
+             data-zh="这个总价仅用于展示。真实价格会受到型号、数量、交付方式和技术要求影响。"
+             data-ru="Эта сумма только для показа. Реальная цена зависит от модели, количества, условий поставки и технических требований."
+             data-ar="هذا الإجمالي للعرض فقط. السعر الحقيقي قد يعتمد على الطراز والكمية وطريقة التسليم والمتطلبات الفنية.">
+            This total is for display only. Real pricing can depend on model, quantity, delivery and technical requirements.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer>
+    <div class="container">
+      <span data-en="© 2026 Generator Spare Parts Solutions. All rights reserved."
+            data-zh="© 2026 发电机配件解决方案网站。保留所有权利。"
+            data-ru="© 2026 Сайт решений по запасным частям для генераторов. Все права защищены."
+            data-ar="© 2026 موقع حلول قطع غيار المولدات. جميع الحقوق محفوظة.">
+        © 2026 Generator Spare Parts Solutions. All rights reserved.
+      </span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
